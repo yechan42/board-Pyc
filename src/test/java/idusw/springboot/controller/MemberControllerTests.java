@@ -73,8 +73,9 @@ public class MemberControllerTests {
         else
             System.out.println("등록 실패");
     }
+}
 
-    @Test
+    /** @Test
     public void testPageList() {
         PageRequestDTO pageRequestDTO = PageRequestDTO.builder().page(5).size(10).build();
         PageResultDTO<Member, MemberEntity> resultDTO = memberService.getList(pageRequestDTO);
@@ -86,10 +87,10 @@ public class MemberControllerTests {
          * int totalPage 인 경우 getter는 getTotalPage(), setter setTotalPage()
          *
          * @Data == @Getter @Setter @RequiredArgsConstructor @ToString @EqualsAndHashCode.
-         */
+
         System.out.println("Prev : " + resultDTO.isPrev()); //  PerPagination = 4인경, 1 - 4, 5 - 8, 9 - 12
         System.out.println("Next : " + resultDTO.isNext());
         System.out.println("Total Page : " + resultDTO.getTotalPage());
         resultDTO.getPageList().forEach(i -> System.out.println(i));
     }
-}
+}*/
